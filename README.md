@@ -12,6 +12,8 @@
 - Where is your dog
     - Tracking dogs outside time 
     - Making sure Spot doesn't encounter Jack
+- Where's [Grandma | Dad | Mom | Tito]
+    - Generally knowing where family is
 - Payment reminders
     - Not automatic withdrawals
     - Annual renewals reminders
@@ -32,12 +34,24 @@
     - Passport renewal reminders
     - DL renewal reminders
     - Car tag renewal reminders
+- Interactivity
+    - Speech recognition
+    - Text to Speech
+- Daily Schedule 
+    - For child (visual)
+    - For family
+- Chores
+    - Prioritization
+    - Who is doing them
+    - What is missing
+- Recurring Purchases
+    - Keeping track of specific dog food
 
 ## MVP
 - Multi-calendar "time off requests"
 - Where is your dog
-- Time-based reminders
-- Assignments
+- Time-based reminders (payments, renewals, etc)
+- Assignments - tasks
 
 ## Integrations
 - Sentry
@@ -100,12 +114,16 @@
     - Twitch
 
 ## Frameworks
-- Blazor
-- Uno Platform
-- Flutter
-- .NET MAUI
-- Capacitor - all in on web
-- Ionic + Capacity
-- Firebase + Flutter
-- Supabase + (Cap, RN, Flutter)
+- [Blazor](https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor)
+- [Uno Platform](https://platform.uno/)
+    - [VS Code Extension](https://platform.uno/vs-code/)
+- [Flutter](https://flutter.dev/)
+    - Firebase + Flutter
+- [.NET MAUI](https://docs.microsoft.com/en-us/dotnet/maui/what-is-maui)
+- [Capacitor](https://capacitorjs.com/docs) - all in on web
+    - [Official Plugins](https://capacitorjs.com/docs/apis)
+    - [Community Plugins](https://capacitorjs.com/docs/plugins/community)
+    - [VS Code Extension](https://capacitorjs.com/docs/getting-started/vs-code-extension)
+    - Ionic + Capacity
+- [Supabase](https://supabase.com/) + (Cap, [React Native)https://reactnative.dev/), Flutter)
 
