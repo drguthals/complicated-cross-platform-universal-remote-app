@@ -1,0 +1,7 @@
+{
+  "name": "WMCCPURA",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
