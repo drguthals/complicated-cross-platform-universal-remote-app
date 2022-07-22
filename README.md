@@ -125,5 +125,5 @@
     - [Community Plugins](https://capacitorjs.com/docs/plugins/community)
     - [VS Code Extension](https://capacitorjs.com/docs/getting-started/vs-code-extension)
     - Ionic + Capacity
-- [Supabase](https://supabase.com/) + (Cap, [React Native)https://reactnative.dev/), Flutter)
+- [Supabase](https://supabase.com/) + (Cap, [React Native](https://reactnative.dev/), Flutter)
 
