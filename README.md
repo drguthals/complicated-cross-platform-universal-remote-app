@@ -1,5 +1,16 @@
 # World's Most Complicated Cross-Platform Universal Remote App
 
+## Getting Started
+```bash
+% npm install -g @ionic/cli
+$ ionic start
+% cd wmccpura
+% npm install @ionic/angular@latest --save
+$ ionic serve
+```
+
+
+
 ## Requirements (not complete)
 - Calendar sync'd with shopping list
     - Location on calendar invite
