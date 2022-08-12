@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">WMCCPURA</string>
-    <string name="title_activity_main">WMCCPURA</string>
+    <string name="app_name">complicated-cross-platform-universal-remote-app</string>
+    <string name="title_activity_main">complicated-cross-platform-universal-remote-app</string>
     <string name="package_name">io.ionic.starter</string>
     <string name="custom_url_scheme">io.ionic.starter</string>
 </resources>

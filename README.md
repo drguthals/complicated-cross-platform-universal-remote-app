@@ -4,7 +4,6 @@
 ```bash
 % npm install -g @ionic/cli
 $ ionic start
-% cd wmccpura
 % npm install @ionic/angular@latest --save
 $ ionic serve
 ```
