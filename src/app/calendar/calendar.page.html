@@ -13,5 +13,9 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Calendar page"></app-explore-container>
+  <app-explore-container name="Calendar page">
+    <button id="authorize_button" onclick="handleAuthClick()">Authorize</button>
+    <button id="signout_button" onclick="handleSignoutClick()">Sign Out</button>
+    <pre id="content" style="white-space: pre-wrap;"></pre>
+  </app-explore-container>
 </ion-content>

@@ -12,12 +12,28 @@
     "importHelpers": true,
     "target": "es2020",
     "module": "es2020",
-    "lib": ["es2018", "dom"]
+    "lib": ["es2018", "dom"],
+    "types": ["gapi"]
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
     "strictTemplates": true
+  },
+  "resolve.fallback": { 
+    "zlib": false,
+    "path": false,
+    "crypto": false,
+    "stream": false,
+    "assert": false,
+    "http": false,
+    "https": false,
+    "os":false,
+    "net":false,
+    "tls":false,
+    "fs":false,
+    "http2":false,
+    "child_process":false
   }
 }

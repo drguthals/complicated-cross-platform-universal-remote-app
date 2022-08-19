@@ -31,5 +31,7 @@ npm-debug.log*
 /plugins
 /www
 
-environment.prod.ts 
-environment.ts 
+.env
+src/assets/setEnv.ts
+src/environments/environment.prod.ts
+src/environments/environment.ts

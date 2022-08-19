@@ -9,7 +9,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "gh-pages": "ionic build --prod -- --base-href https://drguthals.github.io/complicated-cross-platform-universal-remote-app/ && npx angular-cli-ghpages --branch=gh-pages --dir=www"
   },
   "private": true,
   "dependencies": {
@@ -31,9 +32,23 @@
     "@capacitor/storage": "^1.2.5",
     "@ionic/angular": "^6.1.9",
     "@ionic/pwa-elements": "^3.1.1",
-    "angular": "^1.8.2",
+    "@sentry/angular": "^7.8.1",
+    "@sentry/capacitor": "^0.9.0",
+    "@types/gapi": "^0.0.42",
+    "@types/gapi.client.calendar": "^3.0.10",
+    "angular": "^1.6.10",
     "angular-cli-ghpages": "^1.0.3",
+    "assert": "^2.0.0",
+    "crypto-browserify": "^3.12.0",
+    "google-auth-library": "^8.1.1",
+    "google-calendar": "^0.0.5",
+    "googleapis": "^105.0.0",
+    "https-browserify": "^1.0.0",
+    "node-polyfill-webpack-plugin": "^2.0.1",
+    "os-browserify": "^0.3.0",
     "rxjs": "~6.6.0",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
     "tslib": "^2.2.0",
     "zone.js": "~0.11.4"
   },
@@ -52,10 +67,11 @@
     "@ionic/cli": "6.20.1",
     "@types/jasmine": "~3.6.0",
     "@types/jasminewd2": "~2.0.3",
-    "@types/node": "^12.11.1",
+    "@types/node": "^12.20.55",
     "@typescript-eslint/eslint-plugin": "5.3.0",
     "@typescript-eslint/parser": "5.3.0",
     "cordova-res": "0.15.4",
+    "dotenv": "^16.0.1",
     "eslint": "^7.6.0",
     "eslint-plugin-import": "2.22.1",
     "eslint-plugin-jsdoc": "30.7.6",
@@ -70,7 +86,8 @@
     "karma-jasmine-html-reporter": "^1.5.0",
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
-    "typescript": "~4.7.3"
+    "typescript": "~4.7.3",
+    "yargs": "^17.5.1"
   },
   "description": "An Ionic project"
 }

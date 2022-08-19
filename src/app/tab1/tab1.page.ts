@@ -12,8 +12,10 @@ export class Tab1Page {
 
   addPhotoToGallery() {
     this.photoService.addNewToGallery();
+    throw new Error('Test Thrown Error');
   }
 
+  // eslint-disable-next-line @angular-eslint/use-lifecycle-interface
   async ngOnInit() {
     await this.photoService.loadSaved();
   }
