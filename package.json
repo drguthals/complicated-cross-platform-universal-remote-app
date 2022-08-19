@@ -40,7 +40,6 @@
     "angular-cli-ghpages": "^1.0.3",
     "google-auth-library": "^8.1.1",
     "google-calendar": "^0.0.5",
-    "googleapis": "^105.0.0",
     "node-polyfill-webpack-plugin": "^2.0.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.2.0",
@@ -90,15 +89,6 @@
     "ts-node": "~8.3.0",
     "typescript": "~4.7.3",
     "yargs": "^17.5.1"
-  },
-  "browser": {
-    "fs": false,
-    "path": false,
-    "os": false,
-    "child_process": false,
-    "http2": false,
-    "net": false,
-    "tls": false
   },
   "description": "An Ionic project"
 }

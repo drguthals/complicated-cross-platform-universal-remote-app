@@ -13,41 +13,12 @@
     "target": "es2020",
     "module": "es2020",
     "lib": ["es2018", "dom"],
-    "types": ["gapi"],
-    "paths": {
-      "crypto": ["./node_modules/crypto-browserify"],
-      "path": ["./node_modules/path-browserify"],
-      "stream": ["./node_modules/stream-browserify"],
-      "assert": ["./node_modules/assert"],
-      "http": ["./node_modules/stream-http"],
-      "https": ["./node_modules/https-browserify"],
-      "zlib": ["./node_modules/browserify-zlib"],
-      "os": ["./node_modules/os-browserify"]
-    }
+    "types": ["gapi"]
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
     "strictTemplates": true
-  },
-  "resolve.fallback": {
-    "zlib": false,
-    "path": false,
-    "crypto": false,
-    "stream": false,
-    "assert": false,
-    "http": false,
-    "https": false,
-    "os": false,
-    "net": false,
-    "tls": false,
-    "fs": false,
-    "child_process": false
-  },
-  "browser": {
-    "fs": false,
-    "path": false,
-    "os": false
   }
 }

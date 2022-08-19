@@ -1,19 +1,18 @@
 /* eslint-disable @typescript-eslint/naming-convention */
 import { Component } from '@angular/core';
-import { google } from 'googleapis';
 import { environment } from '../../environments/environment';
-declare var gapi : any;
+declare let gapi: any;
+declare let google: any;
 
 @Component({
   selector: 'app-calendar',
   templateUrl: 'calendar.page.html',
-  styleUrls: ['calendar.page.scss']
+  styleUrls: ['calendar.page.scss'],
 })
-
 export class CalendarPage {
-
   // Discovery doc URL for APIs used by the quickstart
-  DISCOVERY_DOC = 'https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest';
+  DISCOVERY_DOC =
+    'https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest';
 
   // Authorization scopes required by the API; multiple scopes can be
   // included, separated by spaces.
@@ -76,7 +75,7 @@ export class CalendarPage {
   handleAuthClick() {
     this.tokenClient.callback = async (resp) => {
       if (resp.error !== undefined) {
-        throw (resp);
+        throw resp;
       }
       document.getElementById('signout_button').style.visibility = 'visible';
       document.getElementById('authorize_button').innerText = 'Refresh';
@@ -86,10 +85,10 @@ export class CalendarPage {
     if (gapi.client.getToken() === null) {
       // Prompt the user to select a Google Account and ask for consent to share their data
       // when establishing a new session.
-      this.tokenClient.requestAccessToken({prompt: 'consent'});
+      this.tokenClient.requestAccessToken({ prompt: 'consent' });
     } else {
       // Skip display of account chooser and consent dialog for an existing session.
-      this.tokenClient.requestAccessToken({prompt: ''});
+      this.tokenClient.requestAccessToken({ prompt: '' });
     }
   }
 
@@ -117,7 +116,7 @@ export class CalendarPage {
     try {
       const request = {
         calendarId: 'primary',
-        timeMin: (new Date()).toISOString(),
+        timeMin: new Date().toISOString(),
         showDeleted: false,
         singleEvents: true,
         maxResults: 10,
@@ -136,8 +135,12 @@ export class CalendarPage {
     }
     // Flatten to string to display
     const output = events.reduce(
-        (str, event) => `${str}${event.summary} (${event.start.dateTime || event.start.date})\n`,
-        'Events:\n');
+      (str, event) =>
+        `${str}${event.summary} (${
+          event.start.dateTime || event.start.date
+        })\n`,
+      'Events:\n'
+    );
     document.getElementById('content').innerText = output;
   }
 }
