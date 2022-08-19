@@ -2,6 +2,7 @@
 import { Component } from '@angular/core';
 import { google } from 'googleapis';
 import { environment } from '../../environments/environment';
+declare var gapi : any;
 
 @Component({
   selector: 'app-calendar',
